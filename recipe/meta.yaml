@@ -1,5 +1,5 @@
 {% set name = "eqt" %}
-{% set version = "0.7.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eqt-{{ version }}.tar.gz
-  sha256: 8cb506756b7bbc9fbd3da5b020bd9c3b41335b2e716d3512e06c6cab7653ebbb
+  sha256: 0f043612996c58f959d6b30206c73c5c8f3ff611551397a5fcefe49a11a2fc41
 
 build:
   noarch: python
