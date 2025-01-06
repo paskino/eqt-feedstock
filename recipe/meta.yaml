@@ -1,13 +1,13 @@
 {% set name = "eqt" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eqt-{{ version }}.tar.gz
-  sha256: 637e4032c01a217a8a511d367b33fd96c834d5994899c031e378f558eff20e50
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/eqt-{{ version }}.tar.gz
+  sha256: 11a94cac20ef84473551cb40cb42bf3420c2257087f32d5eb73de2369fa9a40d
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<3.12
     - setuptools >=42
     - setuptools-scm >=3.4
     - pip
   run:
-    - python >=3.7
+    - python >=3.7,<3.12
     - qdarkstyle
 
 test:
